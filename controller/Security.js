@@ -35,3 +35,10 @@ exports.protectLogin = async (req, res, next) => {
 
     return next();
 };
+
+
+
+exports.logout = (req, res) => {
+    res.clearCookie("jwt");
+    res.redirect("/login");
+};
