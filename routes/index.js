@@ -78,4 +78,9 @@ router.get('/auth/github/callback',
     });
 
 
+router.get('/logout',(req,res) => {
+    Secuity.logout(req,res);
+})
+
+
 module.exports = router;
