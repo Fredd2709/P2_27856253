@@ -2,6 +2,7 @@ const ContactosController = require("../controller/ContactosController");
 const contactosController = new ContactosController();
 const passport = require('passport');
 const indexController = require("../controller/indexController");
+const GitHubStrategy = require('passport-github').Strategy;
 const Secuity = require("../controller/Security");
 var express = require('express');
 var router = express.Router();
