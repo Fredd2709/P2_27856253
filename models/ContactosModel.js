@@ -48,6 +48,9 @@ class ContactosModel {
         const all = promisify(this.db.all).bind(this.db);
         return await all(sql);
       }
+
+
+
 }
 
 module.exports = ContactosModel;

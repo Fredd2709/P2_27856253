@@ -82,10 +82,7 @@ enviarCorreo(name, email, comment, USER_EMAIL, USER_DESTINO1){
 
         await this.contactosModel.crearContacto(name, email, comment, ip, fecha, pais);
 
-        const contactos = await this.contactosModel.obtenerAllContactos();
-
         await this.enviarCorreo(name, email, comment, USER_EMAIL, USER_DESTINO1);
-    
         console.log(contactos);
 
         res.send("Formulario enviado con exito");
