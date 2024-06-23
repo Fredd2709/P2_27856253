@@ -1,6 +1,7 @@
 const ContactosController = require("../controller/ContactosController");
 const contactosController = new ContactosController();
 const passport = require('passport');
+const jwt = require('jsonwebtoken');
 const indexController = require("../controller/indexController");
 const GitHubStrategy = require('passport-github').Strategy;
 const Secuity = require("../controller/Security");
